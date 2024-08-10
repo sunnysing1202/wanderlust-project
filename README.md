@@ -1,0 +1,2 @@
+# MAJORPROJECT
+ frontend, backend, database
