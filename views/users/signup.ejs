@@ -1,8 +1,22 @@
 <% layout("/layouts/boilerplate") %>
+<style>
+    @media only screen and (max-width: 580px) {
+        .signup-container {
+            margin: 10px !important;
+            min-width: 95% !important;
+        }
+        .alert-div{
+        width: 80% !important;
+        text-align: center !important;
+    }
+    }
+</style>
 
 <div class="row mt-3">
-    <h1 class="col-6 offset-3">SignUp on Wanderlust</h1>
-    <div class="col-6 offset-3">
+    <div class="alert alert-dark mx-auto alert-div" >
+        Signup to proceed!
+      </div>
+    <div class="col-6 offset-3 signup-container">
         <form action="/signup" method="post" novalidate class="needs-validation">
             <div class="mb-3">
                 <label for="username" class="form-label">username</label>

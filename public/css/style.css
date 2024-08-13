@@ -24,14 +24,14 @@ body {
 }
 
 /*footer*/
-.f-info-links {
-    text-decoration: none;
-    color: #222222 !important;
+.f-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    height: 4rem;
 }
 
-.f-info-links:hover {
-    text-decoration: underline;
-}
 
 
 
@@ -79,6 +79,7 @@ body {
 /*Edit Page*/
 .edit-btn {
     background-color: red !important;
+    width: 5rem !important;
     border: none !important;
 }
 

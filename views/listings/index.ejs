@@ -1,38 +1,53 @@
     <% layout("/layouts/boilerplate") %>
     <style>
         #filters {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
         }
-
+      
         .filter {
-            text-align: center;
-            margin-right: 2rem;
-            margin-top: 2rem;
-            opacity: 0.7;
+          text-align: center;
+          margin-right: 2rem;
+          margin-top: 2rem;
+          opacity: 0.7;
         }
-
+      
         .filter:hover {
-            opacity: 1;
-            cursor: pointer;
+          opacity: 1;
+          cursor: pointer;
         }
-        .filter p{
-            font-size: 0.8rem;
+        .filter p {
+          font-size: 0.8rem;
         }
         .tax-info {
-            display: none;
+          display: none;
         }
         .tax-toggle {
-            border: 1px solid black;
-            border-radius: 1rem;
-            height: 3.2rem;
-            padding: 1rem;
-            margin-left: 2rem;
-            display: flex;
-            align-items: center;
+          border: 1px solid black;
+          border-radius: 1rem;
+          height: 3.2rem;
+          padding: 1rem;
+          margin-left: 2rem;
+          display: flex;
+          align-items: center;
         }
-    </style>
+      
+        @media only screen and (max-width: 580px) {
+          #filters {
+            width: 90% !important;
+            overflow-x: scroll !important;
+            flex-wrap: nowrap !important;
+          }
+          .filter {
+            min-width: 5rem !important;
+          }
+      
+          .tax-toggle {
+            display: none !important;
+          }
+        }
+      </style>
     <!-- <h3 class="mt-3">All listings</h3> -->
      <div id="filters">
         <div class="filter">

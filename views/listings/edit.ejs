@@ -1,7 +1,26 @@
 <% layout("/layouts/boilerplate") %>
+
+<style>
+    .show-image {
+            width: 250px !important;
+            height: 180px !important;
+        }
+    @media only screen and (max-width: 580px) {
+        .edit-listing {
+            width: 90% !important;
+        }
+        .alert-div{
+        width: 80% !important;
+        text-align: center !important;
+    }
+    }
+    </style>
+
     <div class="row mt-3">
-        <div class="col-8 offset-2">
-        <h3>Edit your listing</h3>
+        <div class="col-8 offset-2 mx-auto edit-listing">
+            <div class="alert alert-dark mx-auto alert-div" >
+                Edit your listing!
+              </div>
         <form method="post" action="/listings/<%= listing._id %>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
@@ -14,7 +33,7 @@
                 <div class="invalid-feedback">Please enter a short description</div>
             </div>
 
-            <div class="mb-3">
+            <div class="mb-3 show-image">
                 Original Listing Image <br>
                 <img src="<%= originalImageUrl %>" />
             </div>
