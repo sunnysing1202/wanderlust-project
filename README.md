@@ -18,11 +18,6 @@
 </center
 
 
-
-## Built With
-
-Wanderlust Project  which features some of my github projects as well as my resume and technical skills.<br/>
-
 I am thrilled to share my first project, <a href="https://wanderlust-project-dbgu.onrender.com/listings" target="_blank">wanderlust</a> – an Airbnb Clone that replicates essential functionalities of the platform. It was developed using a wide range of technologies and packages, which helped bring this project to life.
 
 This project was built using these technologies.
@@ -35,7 +30,6 @@ This project was built using these technologies.
 - Passport Facebook & Passport Google OAuth20: For social logins.
 - Passport Local Mongoose: To simplify local authentication with MongoDB.
 - Cloudinary: For image storage and management.
-- Mapbox: For interactive maps, allowing users to visualize listing locations.
 - Connect Flash: To display flash messages to users.
 - Connect Mongo: For session storage.
 - Cookie Parser: For parsing cookies for session management.
